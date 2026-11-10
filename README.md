@@ -6,7 +6,8 @@ A static, single-page site for a B2B CRO / conversion tracking / reporting consu
 
 | File | What it is |
 | --- | --- |
-| `index.html` | The landing page |
+| `index.html` | Portfolio home: work, use cases, deliverables, capabilities, process, contact |
+| `work/*.html` | Case study pages (served at `/work/<name>` thanks to clean URLs) |
 | `assets/styles.css` | All styles (colors are tokens at the top) |
 | `assets/main.js` | Mobile menu, tabs, `dataLayer` events |
 | `api/lead.js` | Serverless function that receives all three forms |

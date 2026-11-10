@@ -10,17 +10,26 @@
 
 const ALLOWED_FIELDS = [
   'form-name', 'website', 'email', 'first_name', 'last_name',
-  'ad_spend', 'priority', 'message',
+  'ad_spend', 'priority', 'message', 'company', 'timeline', 'services',
 ];
 
 function parseBody(req) {
   if (req.body && typeof req.body === 'object') return req.body;
-  if (typeof req.body === 'string') return Object.fromEntries(new URLSearchParams(req.body));
+  if (typeof req.body === 'string') {
+    const params = new URLSearchParams(req.body);
+    const out = {};
+    for (const key of new Set(params.keys())) {
+      const all = params.getAll(key);
+      out[key] = all.length > 1 ? all : all[0];
+    }
+    return out;
+  }
   return {};
 }
 
 function clean(value) {
-  return String(value ?? '').trim().slice(0, 2000);
+  const v = Array.isArray(value) ? value.join(', ') : value;
+  return String(v ?? '').trim().slice(0, 2000);
 }
 
 module.exports = async function handler(req, res) {
@@ -47,7 +56,7 @@ module.exports = async function handler(req, res) {
   lead.referrer = clean(req.headers.referer);
 
   if (!lead.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(lead.email)) {
-    res.writeHead(303, { Location: '/#cx-contact' });
+    res.writeHead(303, { Location: '/#start' });
     return res.end();
   }
 
