@@ -59,7 +59,7 @@
           <h1>Turn your ad spend into <span class="mark">pipeline you can see.</span></h1>
           <p class="lede">Drop in your URL to get a free audit of how your landing page converts, whether your tracking reaches your CRM, and where your funnel leaks. Plus the exact fixes to ship first.</p>
 
-          <form class="url-form" name="audit-request" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
+          <form class="url-form" name="audit-request" method="POST" action="/api/lead" data-lead-form>
             <input type="hidden" name="form-name" value="audit-request">
             <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
             <label class="sr-only" for="audit-url">Your website URL</label>
@@ -310,7 +310,7 @@
         <div class="contact-main">
           <h2 class="h2">Let's talk about <span class="ul">growing your pipeline.</span></h2>
           <p class="sub"><strong>Every good engagement starts with a conversation.</strong> Tell me where things stand and I'll reply within one business day.</p>
-          <form class="contact-form" name="contact" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
+          <form class="contact-form" name="contact" method="POST" action="/api/lead" data-lead-form>
             <input type="hidden" name="form-name" value="contact">
             <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
             <div class="field"><label for="c-first">First name</label><input id="c-first" name="first_name" autocomplete="given-name" required></div>
@@ -364,7 +364,7 @@
       <div>
         <p class="foot-h">Newsletter</p>
         <p class="foot-small">One practical CRO or tracking tip each week.</p>
-        <form class="news-form" name="newsletter" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
+        <form class="news-form" name="newsletter" method="POST" action="/api/lead" data-lead-form>
           <input type="hidden" name="form-name" value="newsletter">
           <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
           <label class="sr-only" for="n-email">Email address</label>

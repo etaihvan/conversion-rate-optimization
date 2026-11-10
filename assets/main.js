@@ -38,10 +38,10 @@
   });
 })();
 
-// Push form submissions to the dataLayer for GTM (fires before Netlify redirects)
+// Push form submissions to the dataLayer for GTM (fires before the redirect)
 (function () {
   window.dataLayer = window.dataLayer || [];
-  document.querySelectorAll('form[data-netlify]').forEach(function (form) {
+  document.querySelectorAll('form[data-lead-form]').forEach(function (form) {
     form.addEventListener('submit', function () {
       window.dataLayer.push({ event: 'form_submit', form_name: form.getAttribute('name') });
     });
