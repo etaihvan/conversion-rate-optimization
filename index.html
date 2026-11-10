@@ -23,41 +23,37 @@
 
   <a class="skip" href="#main">Skip to content</a>
 
-  <div class="announce">
-    <p>Is your conversion tracking actually feeding pipeline back to Google Ads? <a href="#audit">Get a free tracking check →</a></p>
-  </div>
-
-  <header class="site-header">
+  <header class="cx-site-header">
     <div class="wrap header-inner">
-      <a class="logo" href="/" aria-label="[YOUR NAME] home">
+      <a class="cx-logo" href="/" aria-label="[YOUR NAME] home">
         <span class="logo-mark" aria-hidden="true">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>
         </span>
         <span>[YOUR NAME]</span>
       </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <button class="cx-nav-toggle" aria-expanded="false" aria-controls="cx-site-nav" aria-label="Open menu">
         <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
-      <nav id="site-nav" class="site-nav" aria-label="Main">
-        <a href="#services">Services</a>
-        <a href="#results">Results</a>
-        <a href="#insights">Insights</a>
-        <a href="#resources">Free resources</a>
-        <a href="#contact">Contact</a>
-        <a class="btn btn-accent btn-sm" href="#audit">Free audit</a>
+      <nav id="cx-site-nav" class="cx-site-nav" aria-label="Main">
+        <a href="#cx-results">Results</a>
+        <a href="#cx-services">Services</a>
+        <a href="#cx-packages">Packages</a>
+        <a href="#cx-resources">Toolkit</a>
+        <a href="#cx-insights">Articles</a>
+        <a class="cx-btn btn-accent btn-sm" href="#audit">Get an audit</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
 
-    <!-- HERO -->
+    <!-- Hero -->
     <section class="hero" id="audit">
       <div class="wrap hero-grid">
         <div class="hero-copy">
           <p class="eyebrow eyebrow-dark">CRO · Tracking · Reporting for B2B paid media</p>
           <h1>Turn your ad spend into <span class="mark">pipeline you can see.</span></h1>
-          <p class="lede">Drop in your URL to get a free audit of how your landing page converts, whether your tracking reaches your CRM, and where your funnel leaks. Plus the exact fixes to ship first.</p>
+          <p class="lede">Share your landing page and I'll send back a short audit: how well it converts, whether your tracking reaches the CRM, and the three fixes worth shipping first.</p>
 
           <form class="url-form" name="audit-request" method="POST" action="/api/lead" data-lead-form>
             <input type="hidden" name="form-name" value="audit-request">
@@ -66,7 +62,7 @@
             <input id="audit-url" name="website" type="url" placeholder="https://yourwebsite.com" required>
             <label class="sr-only" for="audit-email">Work email</label>
             <input id="audit-email" name="email" type="email" placeholder="Work email" required>
-            <button class="btn btn-accent" type="submit">Get my free audit</button>
+            <button class="cx-btn btn-accent" type="submit">Get my free audit</button>
           </form>
           <p class="fine">Delivered within 48 hours · No sales pitch · You keep the findings</p>
 
@@ -103,11 +99,11 @@
       </div>
     </section>
 
-    <!-- CLIENT BAND -->
+    <!-- Clients -->
     <section class="client-band" aria-label="Clients">
       <div class="wrap band-inner">
-        <p class="band-label">Trusted by B2B teams at</p>
-        <div class="logos">
+        <p class="band-label">Selected clients</p>
+        <div class="cx-logos">
           <span class="logo-slot">[CLIENT LOGO]</span>
           <span class="logo-slot">[CLIENT LOGO]</span>
           <span class="logo-slot">[CLIENT LOGO]</span>
@@ -118,21 +114,50 @@
       </div>
     </section>
 
-    <!-- EVERYTHING YOU NEED (tabs) -->
-    <section class="section" id="services">
+    <!-- Results -->
+    <section class="cx-section dark" id="cx-results">
       <div class="wrap">
-        <h2 class="h2">Everything you need to <span class="ul">convert the traffic you pay for.</span></h2>
-        <p class="sub"><strong>The mission is simple:</strong> fix the signal, then optimize the page, then prove it in pipeline.</p>
+        <h2 class="h2">Measured in <span class="ul">pipeline, not page views.</span></h2>
+        <p class="sub">Cleaner data, sharper pages and more qualified pipeline from the same budget.</p>
+        <div class="cx-stats">
+          <article class="cx-stat">
+            <p class="stat-num">[+X%]</p>
+            <p>[Lead-to-SQL rate] after [what changed]</p>
+            <p class="stat-client">[Client / industry]</p>
+          </article>
+          <article class="cx-stat">
+            <p class="stat-num">[−X%]</p>
+            <p>[Cost per SQL] after [what changed]</p>
+            <p class="stat-client">[Client / industry]</p>
+          </article>
+          <article class="cx-stat">
+            <p class="stat-num">[$X]</p>
+            <p>[Pipeline attributed to paid] in [timeframe]</p>
+            <p class="stat-client">[Client / industry]</p>
+          </article>
+        </div>
+        <figure class="cx-quote">
+          <blockquote>"[Client testimonial: ideally a specific outcome plus what working together was like.]"</blockquote>
+          <figcaption>[Name], [Title] at [Company]</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="cx-section" id="cx-services">
+      <div class="wrap">
+        <h2 class="h2">Three problems. <span class="ul">One engagement.</span></h2>
+        <p class="sub">The order matters: fix the data first, then the page, then prove the lift in pipeline.</p>
 
         <div class="tab-card">
           <div class="tab-body">
-            <div class="tabs" role="tablist" aria-label="Services">
+            <div class="cx-tabs" role="tablist" aria-label="Services">
               <button role="tab" id="tab-cro" aria-controls="panel-cro" aria-selected="true">Conversion optimization</button>
               <button role="tab" id="tab-track" aria-controls="panel-track" aria-selected="false" tabindex="-1">Tracking &amp; attribution</button>
               <button role="tab" id="tab-report" aria-controls="panel-report" aria-selected="false" tabindex="-1">Reporting</button>
             </div>
 
-            <div role="tabpanel" id="panel-cro" aria-labelledby="tab-cro" class="panel">
+            <div role="tabpanel" id="panel-cro" aria-labelledby="tab-cro" class="cx-panel">
               <p>Most B2B landing pages are written for the company, not for the search that brought the visitor there. I map your highest-spend search terms and audiences to pages, rewrite around buyer intent, and run tests you can actually reach significance on.</p>
               <ul class="ticks">
                 <li><strong>Message match:</strong> search-term-to-page mapping so every ad group lands on the right promise.</li>
@@ -141,7 +166,7 @@
                 <li><strong>Testing:</strong> prioritized A/B test roadmap measured on SQLs, not just form fills.</li>
               </ul>
             </div>
-            <div role="tabpanel" id="panel-track" aria-labelledby="tab-track" class="panel" hidden>
+            <div role="tabpanel" id="panel-track" aria-labelledby="tab-track" class="cx-panel" hidden>
               <p>Ad platforms optimize toward whatever you tell them is a conversion. If that's a form fill, budget flows to the cheapest leads. I connect click to CRM so Google, Microsoft, LinkedIn and Meta can bid toward qualified pipeline.</p>
               <ul class="ticks">
                 <li><strong>GTM &amp; GA4:</strong> clean key events, consent mode and enhanced conversions.</li>
@@ -150,7 +175,7 @@
                 <li><strong>QA:</strong> every tag tested end to end, documented so your team can maintain it.</li>
               </ul>
             </div>
-            <div role="tabpanel" id="panel-report" aria-labelledby="tab-report" class="panel" hidden>
+            <div role="tabpanel" id="panel-report" aria-labelledby="tab-report" class="cx-panel" hidden>
               <p>When GA4, the ad platforms and the CRM all disagree, every meeting becomes an argument about numbers. I build one source of truth from spend to closed-won that leadership and sales both trust.</p>
               <ul class="ticks">
                 <li><strong>Pipeline dashboards:</strong> spend → lead → MQL → SQL → revenue by channel and campaign.</li>
@@ -167,117 +192,11 @@
       </div>
     </section>
 
-    <!-- RESULTS -->
-    <section class="section dark" id="results">
+    <!-- Packages -->
+    <section class="cx-section tint" id="cx-packages">
       <div class="wrap">
-        <h2 class="h2">Optimization measured in <span class="ul">pipeline, not page views.</span></h2>
-        <p class="sub"><strong>What clients get:</strong> cleaner data, better pages and more qualified pipeline from the same budget.</p>
-        <div class="stats">
-          <article class="stat">
-            <p class="stat-num">[+X%]</p>
-            <p>[Lead-to-SQL rate] after [what changed]</p>
-            <p class="stat-client">[Client / industry]</p>
-          </article>
-          <article class="stat">
-            <p class="stat-num">[−X%]</p>
-            <p>[Cost per SQL] after [what changed]</p>
-            <p class="stat-client">[Client / industry]</p>
-          </article>
-          <article class="stat">
-            <p class="stat-num">[$X]</p>
-            <p>[Pipeline attributed to paid] in [timeframe]</p>
-            <p class="stat-client">[Client / industry]</p>
-          </article>
-        </div>
-        <figure class="quote">
-          <blockquote>"[Client testimonial: ideally a specific outcome plus what working together was like.]"</blockquote>
-          <figcaption>[Name], [Title] at [Company]</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- INSIGHTS -->
-    <section class="section" id="insights">
-      <div class="wrap">
-        <h2 class="h2">Your <span class="ul">conversion edge</span> starts here.</h2>
-        <p class="sub"><strong>Explore the latest insights:</strong> practical guides on CRO, tracking and B2B reporting.</p>
-        <div class="cards">
-          <article class="card">
-            <div class="card-art art-1" aria-hidden="true"><span>Tracking</span></div>
-            <div class="card-body">
-              <p class="tag">Tracking</p>
-              <h3><a href="#">How to send SQLs back to Google Ads with offline conversion imports</a></h3>
-              <p>Why optimizing to form fills burns budget, and the setup that fixes it.</p>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-art art-2" aria-hidden="true"><span>CRO</span></div>
-            <div class="card-body">
-              <p class="tag">CRO</p>
-              <h3><a href="#">Search-term-to-page mapping: the fastest win in B2B landing pages</a></h3>
-              <p>Match the promise in the ad to the page and watch conversion rates move.</p>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-art art-3" aria-hidden="true"><span>Reporting</span></div>
-            <div class="card-body">
-              <p class="tag">Reporting</p>
-              <h3><a href="#">The pipeline dashboard every B2B marketing team should have</a></h3>
-              <p>The five views that end the "which numbers are right?" argument.</p>
-            </div>
-          </article>
-        </div>
-        <p class="more"><a href="#">More insights →</a></p>
-      </div>
-    </section>
-
-    <!-- FREE RESOURCES -->
-    <section class="section tint" id="resources">
-      <div class="wrap">
-        <h2 class="h2">Free tools for <span class="ul">smarter optimization.</span></h2>
-        <p class="sub"><strong>Use them yourself:</strong> the same checklists and templates I use on client audits.</p>
-        <div class="resources">
-          <a class="resource" href="#">
-            <span class="r-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg></span>
-            <span><strong>Tracking QA checklist</strong><span>Every tag, event and click ID to test before you scale spend.</span></span>
-          </a>
-          <a class="resource" href="#">
-            <span class="r-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14h5"/></svg></span>
-            <span><strong>Landing page scorecard</strong><span>Grade any B2B page on message match, proof, friction and offer.</span></span>
-          </a>
-          <a class="resource" href="#">
-            <span class="r-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
-            <span><strong>Pipeline report template</strong><span>A ready-made spend-to-revenue report you can copy today.</span></span>
-          </a>
-          <a class="resource" href="#">
-            <span class="r-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg></span>
-            <span><strong>A/B test calculator</strong><span>Know how much traffic a test needs before you launch it.</span></span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- LIVE AUDIT -->
-    <section class="section">
-      <div class="wrap live">
-        <div class="live-copy">
-          <p class="live-badge">LIVE · [DATE] · [TIME] PT</p>
-          <h2 class="h2">Join the next <span class="ul">live landing page teardown.</span></h2>
-          <p>Each month I audit real B2B landing pages and tracking setups live, and show the exact fixes. Submit your page to be featured.</p>
-          <a class="btn btn-dark" href="#contact">Save my seat</a>
-        </div>
-        <div class="live-art" aria-hidden="true">
-          <p>Landing page<br>teardown</p>
-          <span>CRO · Tracking · Reporting</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- HAND IT OFF -->
-    <section class="section tint">
-      <div class="wrap">
-        <h2 class="h2">Would you rather <span class="ul">hand it off?</span></h2>
-        <p class="sub"><strong>Start small, expand when it pays.</strong> You work with me directly, not an account manager.</p>
+        <h2 class="h2">Pick how <span class="ul">deep we go.</span></h2>
+        <p class="sub">Start with an audit and expand only when it pays for itself. You work with me directly.</p>
         <div class="offers">
           <article class="offer">
             <h3>Audit</h3>
@@ -304,20 +223,97 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section class="section dark" id="contact">
-      <div class="wrap contact">
+    <!-- Toolkit -->
+    <section class="cx-section" id="cx-resources">
+      <div class="wrap">
+        <h2 class="h2">Steal my <span class="ul">audit toolkit.</span></h2>
+        <p class="sub">The same checklists and templates I use on client work, free to copy.</p>
+        <div class="cx-resources">
+          <a class="resource" href="#">
+            <span class="r-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg></span>
+            <span><strong>Tracking QA checklist</strong><span>Every tag, event and click ID to test before you scale spend.</span></span>
+          </a>
+          <a class="resource" href="#">
+            <span class="r-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14h5"/></svg></span>
+            <span><strong>Landing page scorecard</strong><span>Grade any B2B page on message match, proof, friction and offer.</span></span>
+          </a>
+          <a class="resource" href="#">
+            <span class="r-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+            <span><strong>Pipeline report template</strong><span>A ready-made spend-to-revenue report you can copy today.</span></span>
+          </a>
+          <a class="resource" href="#">
+            <span class="r-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg></span>
+            <span><strong>A/B test calculator</strong><span>Know how much traffic a test needs before you launch it.</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles -->
+    <section class="cx-section tint" id="cx-insights">
+      <div class="wrap">
+        <h2 class="h2">Notes from <span class="ul">the field.</span></h2>
+        <p class="sub">Short, practical write-ups on CRO, tracking and B2B reporting.</p>
+        <div class="cx-cards">
+          <article class="cx-card">
+            <div class="card-art art-1" aria-hidden="true"><span>Tracking</span></div>
+            <div class="cx-card-body">
+              <p class="tag">Tracking</p>
+              <h3><a href="#">How to send SQLs back to Google Ads with offline conversion imports</a></h3>
+              <p>Why optimizing to form fills burns budget, and the setup that fixes it.</p>
+            </div>
+          </article>
+          <article class="cx-card">
+            <div class="card-art art-2" aria-hidden="true"><span>CRO</span></div>
+            <div class="cx-card-body">
+              <p class="tag">CRO</p>
+              <h3><a href="#">Search-term-to-page mapping: the fastest win in B2B landing pages</a></h3>
+              <p>Match the promise in the ad to the page and watch conversion rates move.</p>
+            </div>
+          </article>
+          <article class="cx-card">
+            <div class="card-art art-3" aria-hidden="true"><span>Reporting</span></div>
+            <div class="cx-card-body">
+              <p class="tag">Reporting</p>
+              <h3><a href="#">The pipeline dashboard every B2B marketing team should have</a></h3>
+              <p>The five views that end the "which numbers are right?" argument.</p>
+            </div>
+          </article>
+        </div>
+        <p class="cx-more"><a href="#">All articles →</a></p>
+      </div>
+    </section>
+
+    <!-- Teardown -->
+    <section class="cx-section">
+      <div class="wrap live">
+        <div class="live-copy">
+          <p class="live-badge">LIVE · [DATE] · [TIME] PT</p>
+          <h2 class="h2">Monthly teardown: <span class="ul">real pages, real fixes.</span></h2>
+          <p>Once a month I review a few B2B landing pages and tracking setups on a live call and walk through what I would change. Send yours in to be considered.</p>
+          <a class="cx-btn btn-dark" href="#cx-contact">Submit your page</a>
+        </div>
+        <div class="live-art" aria-hidden="true">
+          <p>Landing page<br>teardown</p>
+          <span>CRO · Tracking · Reporting</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="cx-section dark" id="cx-contact">
+      <div class="wrap cx-contact">
         <div class="contact-main">
-          <h2 class="h2">Let's talk about <span class="ul">growing your pipeline.</span></h2>
-          <p class="sub"><strong>Every good engagement starts with a conversation.</strong> Tell me where things stand and I'll reply within one business day.</p>
+          <h2 class="h2">Tell me where <span class="ul">the funnel leaks.</span></h2>
+          <p class="sub">A few details are enough. I'll reply within one business day with next steps.</p>
           <form class="contact-form" name="contact" method="POST" action="/api/lead" data-lead-form>
             <input type="hidden" name="form-name" value="contact">
             <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
-            <div class="field"><label for="c-first">First name</label><input id="c-first" name="first_name" autocomplete="given-name" required></div>
-            <div class="field"><label for="c-last">Last name</label><input id="c-last" name="last_name" autocomplete="family-name" required></div>
-            <div class="field"><label for="c-email">Work email</label><input id="c-email" name="email" type="email" autocomplete="email" required></div>
-            <div class="field"><label for="c-site">Website URL</label><input id="c-site" name="website" type="url" placeholder="https://"></div>
-            <div class="field"><label for="c-spend">Monthly ad spend</label>
+            <div class="cx-field"><label for="c-first">First name</label><input id="c-first" name="first_name" autocomplete="given-name" required></div>
+            <div class="cx-field"><label for="c-last">Last name</label><input id="c-last" name="last_name" autocomplete="family-name" required></div>
+            <div class="cx-field"><label for="c-email">Work email</label><input id="c-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="cx-field"><label for="c-site">Website URL</label><input id="c-site" name="website" type="url" placeholder="https://"></div>
+            <div class="cx-field"><label for="c-spend">Monthly ad spend</label>
               <select id="c-spend" name="ad_spend">
                 <option value="">Select…</option>
                 <option>Under $10k</option>
@@ -326,7 +322,7 @@
                 <option>$150k+</option>
               </select>
             </div>
-            <div class="field"><label for="c-need">Biggest priority</label>
+            <div class="cx-field"><label for="c-need">Biggest priority</label>
               <select id="c-need" name="priority">
                 <option value="">Select…</option>
                 <option>Landing page conversion</option>
@@ -335,8 +331,8 @@
                 <option>All of the above</option>
               </select>
             </div>
-            <div class="field full"><label for="c-msg">Anything else?</label><textarea id="c-msg" name="message" rows="3"></textarea></div>
-            <div class="field full"><button class="btn btn-accent" type="submit">Talk to me</button></div>
+            <div class="cx-field full"><label for="c-msg">Anything else?</label><textarea id="c-msg" name="message" rows="3"></textarea></div>
+            <div class="cx-field full"><button class="cx-btn btn-accent" type="submit">Send it over</button></div>
           </form>
         </div>
         <div class="contact-photo">
@@ -344,22 +340,24 @@
         </div>
       </div>
     </section>
+
   </main>
 
-  <footer class="site-footer">
+  <footer class="cx-site-footer">
     <div class="wrap footer-grid">
       <div>
-        <a class="logo logo-light" href="/"><span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span><span>[YOUR NAME]</span></a>
+        <a class="cx-logo logo-light" href="/"><span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span><span>[YOUR NAME]</span></a>
         <p class="foot-small">CRO, conversion tracking and pipeline reporting for B2B paid media.</p>
         <p class="foot-small">© <span id="year">2026</span> [YOUR NAME / COMPANY]</p>
       </div>
       <nav aria-label="Footer">
-        <p class="foot-h">Navigate</p>
-        <a href="#services">Services</a>
-        <a href="#results">Results</a>
-        <a href="#insights">Insights</a>
-        <a href="#resources">Free resources</a>
-        <a href="#contact">Contact</a>
+        <p class="foot-h">Pages</p>
+        <a href="#cx-results">Results</a>
+        <a href="#cx-services">Services</a>
+        <a href="#cx-packages">Packages</a>
+        <a href="#cx-resources">Toolkit</a>
+        <a href="#cx-insights">Articles</a>
+        <a href="#cx-contact">Contact</a>
       </nav>
       <div>
         <p class="foot-h">Newsletter</p>
@@ -369,7 +367,7 @@
           <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
           <label class="sr-only" for="n-email">Email address</label>
           <input id="n-email" name="email" type="email" placeholder="Email address" required>
-          <button class="btn btn-accent btn-sm" type="submit">Sign up</button>
+          <button class="cx-btn btn-accent btn-sm" type="submit">Sign up</button>
         </form>
         <p class="foot-small"><a href="#">LinkedIn</a> · <a href="#">Privacy</a></p>
       </div>

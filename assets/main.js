@@ -1,7 +1,7 @@
 // Mobile nav
 (function () {
-  var toggle = document.querySelector('.nav-toggle');
-  var nav = document.getElementById('site-nav');
+  var toggle = document.querySelector('.cx-nav-toggle');
+  var nav = document.getElementById('cx-site-nav');
   if (!toggle || !nav) return;
   toggle.addEventListener('click', function () {
     var open = nav.classList.toggle('open');

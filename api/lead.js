@@ -47,7 +47,7 @@ module.exports = async function handler(req, res) {
   lead.referrer = clean(req.headers.referer);
 
   if (!lead.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(lead.email)) {
-    res.writeHead(303, { Location: '/#contact' });
+    res.writeHead(303, { Location: '/#cx-contact' });
     return res.end();
   }
 
