@@ -1,12 +1,3 @@
-/* ===== Primary font: Circular XX =====
-   Circular XX is a commercial font (Lineto). To enable it, add your licensed
-   web font files to /assets/fonts/ and uncomment this block.
-
-@font-face { font-family: "CircularXX"; src: url("/assets/fonts/CircularXX-Regular.woff2") format("woff2"); font-weight: 400; font-display: swap; }
-@font-face { font-family: "CircularXX"; src: url("/assets/fonts/CircularXX-Medium.woff2") format("woff2"); font-weight: 500; font-display: swap; }
-@font-face { font-family: "CircularXX"; src: url("/assets/fonts/CircularXX-Bold.woff2") format("woff2"); font-weight: 700; font-display: swap; }
-*/
-
 /* ===== Portfolio site: tokens ===== */
 :root {
   --bg: #FFFFFF;
@@ -22,8 +13,8 @@
   --accent-soft: #9DBBE8; /* secondary chart fill */
   --amber: #B45309;
   --radius: 14px;
-  /* Primary: Circular XX (licensed; see @font-face below). Falls back to Figtree until the files are added. */
-  --head: "CircularXX", "Figtree", system-ui, sans-serif;
+  /* Primary: Plus Jakarta Sans (free, close match for Circular XX) */
+  --head: "Plus Jakarta Sans", "Figtree", system-ui, sans-serif;
   /* Secondary: Figtree */
   --body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
   --mono: "Figtree", system-ui, sans-serif; /* labels use the secondary font */

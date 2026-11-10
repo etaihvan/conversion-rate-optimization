@@ -44,7 +44,7 @@ Every submission is also written to the function logs (**Logs** tab, filter by `
 
 ## Fonts
 
-- **Primary (headings): Circular XX.** It's a commercial font from Lineto, so it isn't bundled. Buy a web license, put the `.woff2` files in `assets/fonts/` as `CircularXX-Regular.woff2`, `CircularXX-Medium.woff2` and `CircularXX-Bold.woff2`, then uncomment the `@font-face` block at the top of `assets/styles.css`. Until then, headings fall back to Figtree.
+- **Primary (headings): Plus Jakarta Sans**, a free Google Fonts alternative to Circular XX.
 - **Secondary (body and labels): Figtree**, loaded from Google Fonts.
 
 ## Brand color
