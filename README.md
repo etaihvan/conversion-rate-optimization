@@ -42,6 +42,11 @@ Every submission is also written to the function logs (**Logs** tab, filter by `
 - In GTM, trigger lead conversion tags on the `lead_thank_you` event (or `form_submit` with `form_name`).
 - Point the insight cards and free-resource links at real URLs.
 
-## Change the brand color
+## Fonts
 
-Edit `--accent`, `--accent-ink` and `--accent-text` at the top of `assets/styles.css`.
+- **Primary (headings): Circular XX.** It's a commercial font from Lineto, so it isn't bundled. Buy a web license, put the `.woff2` files in `assets/fonts/` as `CircularXX-Regular.woff2`, `CircularXX-Medium.woff2` and `CircularXX-Bold.woff2`, then uncomment the `@font-face` block at the top of `assets/styles.css`. Until then, headings fall back to Figtree.
+- **Secondary (body and labels): Figtree**, loaded from Google Fonts.
+
+## Brand color
+
+Chelsea blue `#034694`. Edit `--accent`, `--accent-text` and `--accent-on-dark` (the lighter blue used on dark sections) at the top of `assets/styles.css`.
